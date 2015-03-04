@@ -3,6 +3,14 @@
 
 /**
  * @ngdoc service
+ * @name moduleName.service:serviceName
+ *
+ * @description
+ * Service description goes here
+ *
+
+/**
+ * @ngdoc service
  * @name myapp.service:MyService
  *
  * @description
