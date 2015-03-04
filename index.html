@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+	<meta charset="UTF-8">
+	<title>Sample Application for NgDocs</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="MyCtrl as model">
+	<div class="container">
+		<h1>Users List</h1>
+	<table class="table table-bordered">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th></th>
+		</tr>
+		<tr ng-repeat="user in model.users track by $index">
+			<td>{{user.name}}</td>
+			<td>{{user.age}}</td>
+			<td><button class="btn btn-success" ng-click="model.selectUser(user)">Select</button></td>
+		</tr>
+	</table>
+	<my-directive param1="model.selectedUser.name" param2="{{model.selectedUser.age}}"></my-directive>
+
+	</div>
+	
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="dist/templates.js"></script>
+	<script src="scripts/controller.js"></script>
+	<script src="scripts/directive.js"></script>
+	<script src="scripts/service.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "grunt-ng-docs-sample",
+  "version": "0.0.0",
+  "description": "Basic example for grunt-ngdocs",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "0.4.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-html2js": "^0.3.0",
+    "grunt-ngdocs": "^0.2.7"
+  }
+}
