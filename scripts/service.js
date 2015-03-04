@@ -3,7 +3,7 @@
 
 /**
  * @ngdoc service
- * @name myapp.MyService
+ * @name myapp.service:MyService
  *
  * @description
  * This is a custom service
@@ -47,7 +47,7 @@
 			/**
 			 * @ngdoc method
 			 * @name getUsers
-			 * @methodOf myapp.MyService
+			 * @methodOf myapp.service:MyService
 			 * @description
 			 * This method will return the list of users
 			 *
